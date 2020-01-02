@@ -1,9 +1,9 @@
 import json
 
 
-def my_handler(input, context):
+def handler(input, context):
     return {
         'statucCode': 200,
-        'headers': {},
+        'headers': {'Access-Control-Allow-Origin': '*'},
         'body': json.dumps(input)
     }
